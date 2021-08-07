@@ -1,0 +1,23 @@
+<h4>Task</h4>
+
+<ul class="task1">
+    {{#each jsObj}}
+        {{#each this}}
+    <li class="item">
+        <div class="item-name">
+            {{id}} | {{title}}
+        </div>
+    </li>
+        {{/each}}
+    {{/each}}
+</ul>
+
+{{!-- <ul class="task2">
+    {{#each jsObj}}
+    <li class="item">
+        <div class="item-name">
+            {{id}} | {{title}}
+        </div>
+    </li>
+    {{/each}}
+</ul> --}}
