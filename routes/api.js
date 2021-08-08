@@ -42,7 +42,7 @@ router.patch('/:id', (req, res) => {
 });
 
 router.delete('/:id', (req, res) => {
-    currentTaskId -= 1
+    currentTaskId -= 1;
     const tasksId = Number.parseInt(req.params.id);
     const taskIndex = jsObj.task.findIndex((task) => task.id === tasksId)
     jsObj.task.splice(taskIndex, 1);
